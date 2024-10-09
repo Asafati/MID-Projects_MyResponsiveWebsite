@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Unai.png" type="image/png">
+
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</head>
+
+
+<body>
+
+    <div class="header">
+        <h1>About Me</h1>
+    </div>
+
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="MyHoliday.html">My Holiday</a></li>
+                <li><a href="registration.html">Registration</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <h2>Who Am I?</h2>
+            <p>
+                My name is Asafati Gea, and I am passionate about web development. This page provides a brief overview
+                of my background.
+            </p>
+            <div class="section-header" onclick="toggleContent('biodata')">
+            <li class="container">My Biodata</li>
+            </div>
+            <div id="biodata" class="section-content" style="display: none;">
+                <div class="info-box">
+                    <p>Hello guys, I will tell you everything about me.</p>
+                    <p>My full name: Asafati Gea</p>
+                    <p>Call me: Asa</p>
+                    <p>Origin: Nias Island, Indonesia</p>
+                    <p><a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank">Watch Video</a></p>
+                    </div>
+            </div>
+
+            <div class="section-header" onclick="toggleContent('education')">
+            <li class="container">My Education</li>
+            </div>
+            <div id="education" class="section-content" style="display: none;">
+                <p>1. SD NEGERI 077282 FADOROBOTOLALA</p>
+                <p>2. SMP NEGERI 3 ALASA</p>
+                <p>3. SMA NEGERI 2 ALASA</p>
+                <p><a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank">Watch Video</a></p>
+            </div>
+
+            <div class="section-header" onclick="toggleContent('experience')">
+            <li class="container">My Experience</li>
+            </div>
+            <div id="experience" class="section-content" style="display: none;">
+                <p>1 year joining the missionary member service</p>
+                <p>3 months selling advent books in Jogja</p>
+                <p>6 months as a cooperative collector in Tangerang</p>
+                <p>3 months as a VPS Customer support</p>
+                <p>1 year as a cook at the UNAI cafeteria</p>
+                <p><a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank">Watch Video</a></p>
+            </div>
+
+            <div class="section-header" onclick="toggleContent('skills')">
+            <li class="container">My Skills</li>
+            </div>
+            <div id="skills" class="section-content" style="display: none;">
+                <p>I can play the piano</p>
+                <p>I can play the flute</p>
+                <p>I can play the violin</p>
+                <p>I can play the guitar.</p>
+                <p><a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank">Watch Video</a></p>
+            </div>
+
+            <div class="section-header" onclick="toggleContent('hobbies')">
+            <li class="container">Hobbies & Interests</li>
+            </div>
+            <div id="hobbies" class="section-content" style="display: none;">
+                <p>My hobby: Playing every type of music</p>
+                <p>My interests: I want to be a Programmer</p>
+                <p><a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank">Watch Video</a></p>
+            </div>
+
+            <div class="section-header" onclick="toggleContent('ordered-list')">
+            <li class="container">Ordered List</li>
+            </div>
+            <div id="ordered-list" class="section-content" style="display: none;">
+                <ol>
+                    <li>Reading Books</li>
+                    <li>Traveling</li>
+                    <li>Coding</li>
+                </ol>
+                <p><a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank">Watch Video</a></p>
+            </div>
+        </div>
+
+        <div class="aside">
+            <h2 class="container">Skills</h2>
+            <p>
+                Web Development, Photography, and Traveling are among my many hobbies and interests.
+            </p>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2024 Asafati Gea. All rights reserved.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

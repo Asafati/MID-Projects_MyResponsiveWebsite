@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+    /* Mengatur model kotak untuk semua elemen agar padding dan border termasuk dalam lebar dan tinggi elemen */
+    margin: 1%;
+    /* Menghilangkan margin default dari elemen */
+    padding: 2px;
+    /* Menghilangkan padding default dari elemen */
+    font-family: 'Arial', sans-serif;
+    /* Menetapkan font yang bersih dan mudah dibaca */
+    color: #333;
+    /* Warna teks gelap untuk keterbacaan yang lebih baik */
+    line-height: 1.5;
+    /* Meningkatkan jarak antar baris untuk keterbacaan */
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+    /* Mengatur font untuk seluruh dokumen HTML */
+}
+
+body {
+    background-image: url('istockphoto.jpg');
+    /* Mengatur gambar latar belakang */
+    background-size: cover;
+    /* Mengubah ukuran gambar latar belakang agar menutupi seluruh area */
+    background-repeat: no-repeat;
+    /* Mencegah gambar latar belakang diulang */
+    background-attachment: fixed;
+    /* Memastikan gambar latar belakang tetap pada posisi saat halaman digulir */
+    background-position: center;
+    /* Mengatur posisi gambar latar belakang di tengah */
+    padding: 20px;
+    /* Memberikan jarak (padding) di sekitar konten */
+    margin: 0;
+    /* Menghapus margin default */
+}
+
+.header {
+    background-color: rgb(146, 72, 72);
+    /* Mengatur warna latar belakang untuk header */
+    color: white;
+    /* Mengatur warna teks menjadi putih */
+    padding: 15px;
+    /* Memberikan jarak (padding) di dalam header */
+    text-align: center;
+    /* Mengatur teks di dalam header agar berada di tengah */
+}
+
+.container {
+    display: grid;
+    /* Menggunakan grid layout untuk kontainer */
+    grid-template-columns: 1fr;
+    /* Mengatur kolom grid menjadi satu kolom */
+    grid-gap: 20px;
+    /* Memberikan jarak antar elemen dalam grid */
+    padding: 15px;
+    /* Memberikan jarak (padding) di dalam kontainer */
+    background-color: blue;
+    /* Mengatur warna latar belakang kontainer */
+}
+
+.menu {
+    background-color: rgb(143, 137, 182);
+    /* Mengatur warna latar belakang untuk menu */
+    color: green;
+    /* Mengatur warna teks menu menjadi hijau */
+    padding: 15px;
+    /* Memberikan jarak (padding) di dalam menu */
+}
+
+.menu ul {
+    list-style-type: none;
+    /* Menghapus gaya daftar default */
+    padding: 0;
+    /* Menghapus padding default dari daftar */
+    margin: 0;
+    /* Menghapus margin default dari daftar */
+}
+
+.menu li {
+    padding: 8px;
+    /* Memberikan jarak (padding) di dalam elemen daftar */
+    margin-bottom: 8px;
+    /* Memberikan margin bawah pada elemen daftar */
+    background-color: darkgray;
+    /* Mengatur warna latar belakang elemen daftar */
+    color: rgb(18, 194, 47);
+    /* Mengatur warna teks elemen daftar */
+    text-align: center;
+    /* Mengatur teks di dalam elemen daftar agar berada di tengah */
+    box-shadow: 0 1px 3px lightgray, gray;
+    /* Menambahkan bayangan pada elemen daftar */
+    border-radius: 3px;
+    /* Memberikan sudut melengkung pada elemen daftar */
+    transition: background-color 0.3s, transform 0.2s;
+    /* Transisi untuk efek hover */
+}
+
+.menu li:hover {
+    background-color: skyblue;
+    /* Mengubah warna latar belakang saat hover */
+    transform: scale(1.05);
+    /* Membesarkan sedikit saat hover */
+}
+
+.main {
+    background-color: rgb(214, 222, 228);
+    /* Mengatur warna latar belakang untuk bagian utama */
+    padding: 2px;
+    /* Memberikan jarak (padding) di dalam bagian utama */
+}
+
+.section-header {
+    cursor: pointer;
+    /* Menampilkan kursor sebagai pointer saat hover */
+    transition: transform 0.2s;
+    /* Transisi untuk efek hover */
+}
+
+.section-header:hover {
+    transform: scale(1.05);
+    /* Membesarkan sedikit saat hover */
+}
+
+.info-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Warna latar belakang putih transparan */
+    border-radius: 10px;
+    /* Memberikan sudut yang melengkung */
+    padding: 15px;
+    /* Jarak dalam kotak */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Bayangan untuk info box */
+    transition: transform 0.2s, box-shadow 0.2s;
+    /* Transisi untuk efek gerakan */
+}
+
+/* Efek hover untuk info-box */
+.info-box:hover {
+    transform: translateY(-5px);
+    /* Mengangkat kotak sedikit ke atas saat hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    /* Bayangan lebih jelas saat hover */
+}
+
+.aside {
+    background-color: rgb(22, 146, 155);
+    /* Mengatur warna latar belakang untuk bagian samping */
+    color: white;
+    /* Mengatur warna teks menjadi putih */
+    padding: 15px;
+    /* Memberikan jarak (padding) di dalam bagian samping */
+    text-align: center;
+    /* Mengatur teks di dalam bagian samping agar berada di tengah */
+    font-size: 14px;
+    /* Mengatur ukuran font */
+    box-shadow: 0 1px 3px lightgray, gray;
+    /* Menambahkan bayangan pada bagian samping */
+}
+
+.footer {
+    background-color: darkgray;
+    /* Mengatur warna latar belakang untuk footer */
+    color: white;
+    /* Mengatur warna teks menjadi putih */
+    padding: 15px;
+    /* Memberikan jarak (padding) di dalam footer */
+    text-align: center;
+    /* Mengatur teks di dalam footer agar berada di tengah */
+    font-size: 11px;
+    /* Mengatur ukuran font */
+}
+
+.responsive-img {
+    width: 100%;
+    /* Mengatur lebar gambar responsif menjadi 100% dari kontainer */
+    height: auto;
+    /* Mengatur tinggi gambar otomatis sesuai aspek rasio */
+    max-width: 100%;
+    /* Mengatur lebar maksimum gambar menjadi 100% */
+    border-radius: 10px;
+    /* Memberikan sudut melengkung pada gambar */
+}
+
+@media only screen and (min-width: 700px) {
+    .container {
+        grid-template-columns: 1fr 2fr 1fr;
+        /* Mengubah layout menjadi tiga kolom pada layar lebih lebar dari 700px */
+    }
+
+    .responsive-img {
+        max-width: 300px;
+        /* Mengatur lebar maksimum gambar menjadi 300px */
+        display: block;
+        /* Menampilkan gambar sebagai elemen blok */
+        margin: 0 auto;
+        /* Mengatur margin otomatis untuk memusatkan gambar */
+    }
+}
